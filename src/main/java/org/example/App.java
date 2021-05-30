@@ -30,7 +30,8 @@ public class App
         int width = widthInput.nextInt();
 
         // Print out the dimensions
-        System.out.println("You entered dimensions of " + length + " feet by " + width + " feet.");
+        System.out.println("You entered dimensions of " + length + " feet by "
+                            + width + " feet.");
 
         // Calculate the areas
         int areaFeet = length * width;
@@ -40,7 +41,7 @@ public class App
         System.out.println("The area is\n" + areaFeet + " square feet");
 
         // Round the answer of the area in meters to 3 decimal places
-        DecimalFormat df = new DecimalFormat("#.###");
+        DecimalFormat df = new DecimalFormat("0.000");
         df.setRoundingMode(RoundingMode.CEILING);
 
         // Print the area in meters
